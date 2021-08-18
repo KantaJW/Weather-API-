@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherChannel</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!--länk till Bootstrap-->
+  <link rel="stylesheet" href="style.css">
+  <!--länk till css-->
+</head>
+
+<body>
+  <!-- background img -->
+  <div class="background-image">
+    <!--logo-->
+    <div class="logo">
+      <img src="images/weather.png" alt="weatherchannel logo">
+    </div>
+    <!--Navigator nav-->
+    <nav role="navigation" aria-label="main-menu">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!--contact form-->
+    <form role="contact-form" autocomplete="on">
+      <h1>Contact Us</h1>
+      <p>If you want to contact us, just use this form and fill in your request to us, and we get back to you as soon as
+        possible!</p>
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <input type="button" id="button-search" value="Submit" aria-label="submit"></button>
+    </form>
+    <!--footet-->
+    <footer>
+      <p>WEATHERCHANNEL<br>
+        <p>Copyright@WeatherChannel.2021</p>
+        </hr>
+    </footer>
+
+  </div>
+</body>
+
+</html>

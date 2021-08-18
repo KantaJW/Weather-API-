@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherChannel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"><!--länk till Bootstrap-->
+  <link rel="stylesheet" href="style.css"><!--länk till css-->
+</head>
+
+<body>
+  <!-- background img -->
+  <div class="background-image">
+    <!--logo-->
+    <div class="logo">
+      <img src="images/weather.png" alt="weatherchannel logo">
+    </div>
+    <!--Navigator nav-->
+    <nav role="navigation" aria-label="main-menu">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!--innehållet about us-->
+    <div class="row">
+      <div class="mx-auto col-7">
+        <h1>About Us</h1>
+        <p> With the vision of making everyone’s outdoor activities more planned,
+          can one go outside and surf, is it enough wind?
+          Can one work on a sunburn
+          or is it one of those days of Netflix and chill, again?</p>
+        <p>WeatherChannel is here for you, to make you know when to put on the raincoat
+          to put on some slippers and go out and have a picnic in the park.
+          We’re here to make it more easy for you to plan your day,
+          what shoes to wear or do you really need that umbrella for a walk in the city? </p>
+        <p> We wanted to make it possible to get easy access to the news of the weather anywhere
+          the world so that’s why WeatherChannel was formed, 2021 in February by a team of five.
+          We’re here for you, and hope you’ll like our site and all that comes with!
+          If you still have any questions you can just <b><a href="contact.html">Contact us!</a></b></p>
+      </div>
+    </div>
+    <!--image-->
+    <div role="image" class="images">
+      <img src="images/Report.jpg" alt="weather news reader girl">
+    </div>
+    <!-- Newsletter -->
+    <section class="section newsletter" id="newsletter">
+      <div class="newsletter__box">
+        <h4 id="subscribeheader">
+          Subscribe to our newsletter.
+        </h4>
+      </div>
+      <div class="newsletter__box">
+        <form action="subscribe">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" placeholder="Your email" />
+          <input type="button" id="button-search" value="Subscribe" aria-label="Subscribe"></button>
+        </form>
+      </div>
+    </section>
+    <!--footer-->
+    <footer>
+      <p>WEATHERCHANNEL<br>
+        <p>Copyright@WeatherChannel.2021</p>
+        </hr>
+    </footer>
+
+  </div>
+</body>
+</html>

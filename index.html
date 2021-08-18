@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- choosing site-language -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherChannel</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--länk till font style-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"><!--länk till Bootstrap-->
+  <link rel="stylesheet" href="style.css"><!--länk till css-->
+</head>
+
+<body>
+  <!-- background img -->
+  <div class="background-image">
+    <!--logo-->
+    <div class="logo">
+      <img src="images/weather.png" alt="weathcerchannel logo">
+    </div>
+    <!--Navigator bar-->
+    <nav role="navigation" aria-label="main-menu">  <!-- för de som använder hjälpmedel -->
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Innehållet Content-->
+    <div role="main-content">
+      <h1>Check what weather you're going to have today!</h1>
+      <div class="d-flex">
+        <hr class="my-auto flex-grow-1">
+        <div id="searchtext" class="px-4">Just use the search-bar here!</div>
+        <hr class="my-auto flex-grow-1">
+      </div>
+      <input role="text-holder " type="text" id="input-search" placeholder="Search for a city" />
+      <input type="button" id="button-search" value="Search" aria-label="Search"></button>
+    </div>
+    <!--Search function-->
+    <div role="search-result" id="search-result"></div>
+    <template id="template-city">
+      <div class="city-name"></div>
+      <div class="city-coords"></div>
+      <div class="city-country"></div>
+      <div>
+        <a href="#" class="link-current">Nuvarande</a>
+        <a href="#" class="link-forecast">Prognos</a>
+        <div id="container-forecast"></div>
+      </div>
+    </template>
+    <!--Innehållet weather data-->
+    <h1 role="searched-city" id="city-name"></h1>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <table id="forecast">
+          <tbody></tbody>
+        </table>  
+    <table  id="weather">
+      <tbody>
+        <tr>
+          <td>Sunrise:</td>
+          <td class="sunrise"></td>
+        </tr>
+        <tr>
+          <td>Sunset:</td>
+          <td class="sunset"></td>
+        </tr>
+        <tr>
+          <td>Current time:</td>
+          <td class="current-time"></td>
+        </tr>
+        <tr>
+          <td>Description: </td>
+          <td class="description"></td>
+        </tr>
+        <tr>
+          <td>Weathericon: </td>
+          <td class="icon"><img src="" /></td>
+        </tr>
+        <tr>
+          <td>Temperature: </td>
+          <td class="temperature"></td>
+
+        </tr>
+        <tr>
+          <td>Feels like: </td>
+          <td class="feels-like"></td>
+        </tr>
+        <tr>
+          <td>Min.temp.:</td>
+          <td class="temp-min"></td>
+        </tr>
+        <tr>
+          <td>Max.temp:</td>
+          <td class="temp-max"></td>
+        </tr>
+        <tr>
+          <td>Airpressure:</td>
+          <td class="air-pressure"></td>
+        </tr>
+        <tr>
+          <td>Airhumidity:</td>
+          <td class="air-humidity"></td>
+        </tr>
+        <tr>
+          <td>Windspeed:</td>
+          <td class="wind-speed"></td>
+        </tr>
+        <tr>
+          <td>Winddeg</td>
+          <td class="wind-deg"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    <template id="template-forecast">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Temp.</th>
+          <th>Feels like</th>
+          <th>Weather icon</th>
+        </tr>
+        <tr>
+          <td class="date"></td>
+          <td class="time"></td>
+          <td class="temperature"></td>
+          <td class="feels-like"></td>
+          <td><img class="icon" src="" /></td>
+        </tr>
+      </thead>
+    </template>
+    <!--footer-->
+    <footer>
+      <p>WEATHERCHANNEL<br>
+      <p>Copyright@WeatherChannel.2021</p>
+      </hr>
+    </footer>
+   <!--Länkar till Javascript file-->
+    <script src="data/city_list.js"></script>
+    <script src="script/index.js"></script>
+
+  </div>
+</body>
+
+</html>

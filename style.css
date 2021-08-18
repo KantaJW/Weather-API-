@@ -1,0 +1,185 @@
+/*────────────────── 
+  allt text i webbsidan
+──────────────────*/
+*{
+    text-align:center;
+}
+
+/*────────────────── 
+  background image
+──────────────────*/
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .background-image {
+	background-image: url("images/sky.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-attachment: fixed;
+	/*position: relative;*/
+ 
+  }
+
+
+h1 {
+  padding: o.3em;
+
+}
+
+/*Making table responsive and some design*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background-color: #dfdfdf;
+}
+
+td, th, tr {
+  border: 0.063rem solid #7a7979;
+  text-align: center;
+  padding: 0.9375em;
+}
+
+td {
+  font-size: 0.8rem;    
+}
+
+/*──────────────────
+   Navbar
+
+ ──────────────────*/
+ .nav {
+  background-color: rgb(53, 156, 224);
+ }
+
+ .nav li a {
+	color:white;
+	text-decoration: none;
+  font: size 1.5em;
+  }
+  
+  .nav li a:hover  {
+	color: rgb(214, 106, 43);
+  }
+
+  .active {
+    background-color: rgb(30, 77, 148);
+  }
+  
+/*──────────────────
+   Logo 
+
+ ──────────────────*/
+  .logo > img {
+    max-width: 30%;
+    height: auto;
+    cursor: pointer;
+  }
+
+
+  #searchtext{
+    margin-bottom:0.7em;
+  }
+
+  #search-result{
+    cursor: pointer;
+  }
+
+/*──────────────────
+   Contact Form
+ ──────────────────*/
+
+#subscribeheader{
+margin-top:1em;
+}
+ 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background: white (30,30,40); }
+form { max-width:420px; margin:0.8em auto; }
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size:0.75em;
+  border-radius:0.2em;
+  line-height:0.9em;
+  background-color: transparent;
+  border:2px solid #ada8a8;
+  transition: all 0.3s;
+  padding:0.5em;
+  margin-bottom:0.6em;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid steelblue; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:  #ada8a8;
+  border-radius:0.2em;
+  border:0;
+  cursor:pointer;
+  color: black;
+  padding-top:0.4em;
+  padding-bottom:0.4em;
+  transition: all 0.3s;
+  margin-top:-0.45em;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#da6537; }
+
+/*──────────────────
+   About Us 
+ ──────────────────*/
+ .content {
+	text-align: center;
+	padding: 0.4545em;
+
+}
+  
+.images > img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 1.8182em;
+    cursor: pointer;
+  }
+
+  
+/*──────────────────
+   Footer
+ ──────────────────*/
+footer {
+    padding: 1em;
+    background-color: #359ce0;
+    color: white;
+  }
+
+  /*──────────────────
+   media queri
+ ──────────────────*/
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    td, th, tr {
+      padding: 0.125rem;
+    }
+  }
